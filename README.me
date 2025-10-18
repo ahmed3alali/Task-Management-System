@@ -1,117 +1,20 @@
-# 🗂️ Task Management System (C++)
+<h1 align="center">🧠 Task Management System (C++ Console Application)</h1>
 
-A **console-based Task Management System** built in **C++**, designed to help users manage **projects, users, and tasks** efficiently through file persistence (`database.txt`).
-
-This system allows users to create, update, delete, and view tasks — along with user registration and project association — all stored and managed through structured file operations.
+<p align="center">
+  <b>A lightweight, file-based Task Management System written in C++</b><br>
+  Manage projects, users, and tasks efficiently through an interactive console interface.
+</p>
 
 ---
 
-## 🚀 Features
+## 📘 Overview
 
-✅ Add, edit, and delete tasks  
-✅ Assign tasks to users and projects  
-✅ Categorize and label tasks  
-✅ Track task completion status (Finished / Unfinished)  
-✅ Generate full system reports (tasks, users, projects)  
-✅ Register new users and validate IDs  
-✅ Persistent storage via `database.txt`  
-✅ Console-based interactive UI  
+This project is a **console-based Task Management System** built in **C++**.  
+It allows users to **create, read, update, and delete** (CRUD) tasks, projects, and users, while maintaining persistence through a simple **text file database (`database.txt`)**.
+
+The program demonstrates key concepts of **Object-Oriented Programming (OOP)** such as **encapsulation, composition, and class relationships** between `User`, `Project`, and `Task`.
 
 ---
 
 ## 🧩 Project Structure
-
-├── ptasksystem.h # Core class definitions (User, Project, Task, FileHandler)
-├── FileHandler.cpp # Handles file I/O operations and main task management logic
-├── main.cpp # Entry point with console UI (TaskManagementUI)
-├── database.txt # Persistent storage for all tasks (auto-generated)
-└── README.md # Documentation
-
-
----
-
-## 🧠 System Overview
-
-### 🧍‍♂️ User
-Represents a system user with:
-- `name`, `userID`, and `role`
-- Can be assigned to multiple projects and tasks
-
-### 🏗️ Project
-Represents a project with:
-- `name` and `description`
-- Holds associated `Task` and `User` references
-
-### ✅ Task
-Represents a single task with:
-- `name`, `description`, `category`, `label`, `status`, and `time`
-- Pointers to the assigned `User` and `Project`
-
-### 💾 FileHandler
-Handles all file input/output operations:
-- Writes tasks into file (`writeTasksIntoFile`)
-- Reads and reconstructs objects from file (`readTasksFromFile`)
-- Updates and deletes tasks in `database.txt`
-- Generates reports and manages user creation
-
-### 🖥️ TaskManagementUI
-Provides the interactive CLI interface with options to:
-- Add / Delete / Update tasks
-- Register users
-- Generate reports
-- Search for tasks by project
-
----
-
-## ⚙️ How It Works
-
-### ▶️ Running the Program
-1. Compile and run using any C++ compiler:
-   ```bash
-   g++ main.cpp -o taskmanager
-   ./taskmanager
-
-
-## Demo 
-
-===== Task Management System =====
-1. Add Task for Your Project
-2. Delete Task
-3. Update Task
-4. Short Usage Report
-5. New User Registration
-6. Tasks Search Engine by Name
-7. Finished Tasks
-8. Un-Finished Tasks
-9. Fast Task STATUS Update
-10. User Report by ID
-11. Delete A User
-12. EXIT
-
-
-🧱 Core Functionalities
-➕ Add a Task
-Prompts for:
-Task name, description, assigned user, project, category, label, and day
-Automatically writes the task info into database.txt
-🗑️ Delete a Task
-Deletes by task name and updates the file immediately.
-✏️ Update a Task
-Lets the user modify:
-Task name, description, category, label, assigned user/project, and status
-📖 Read Tasks from File
-Automatically loads all tasks, users, and projects from database.txt into memory when the system starts.
-
-
-📊 Full System Report
-=== SYSTEM USAGE REPORT ===
-NUMBER OF TASKS AVAILABLE IN SYSTEM: 15
-NUMBER OF USERS IN SYSTEM: 5
-NUMBER OF PROJECTS IN SYSTEM: 3
-
-
-
-
-
-
 
